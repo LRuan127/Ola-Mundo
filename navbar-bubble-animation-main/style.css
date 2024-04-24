@@ -270,10 +270,9 @@ footer {
 
 /* Estilos para as sections de notícias */
 #destaque,
-#noticias,
-#economia,
-#esportes,
-#cultura {
+#novidades,
+#eventos-do-campus,
+#divulgações {
   padding: 20px;
   margin-bottom: 30px; /* Adicione margem na parte inferior para separar as seções */
   background-color: #f8f8f8; /* Cor de fundo */
@@ -283,10 +282,9 @@ footer {
 
 /* Estilos para os títulos das seções */
 #destaque h2,
-#noticias h2,
-#economia h2,
-#esportes h2,
-#cultura h2 {
+#novidades h2,
+#eventos-do-campus h2,
+#divulgação h2{
   color: #333; /* Cor do texto */
   font-size: 24px; /* Tamanho da fonte */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
