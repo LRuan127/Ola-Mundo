@@ -27,7 +27,7 @@ document.querySelectorAll('.nav-list a').forEach(link => {
         setTimeout(() => {
           const targetPosition = targetSection.offsetTop - headerHeight; // Calcula a posição final da rolagem
           window.scrollTo({ top: targetPosition, behavior: 'smooth' }); // Rolagem suave para a posição ajustada
-        }, 500);
+        }, 100);
       }
       
       // Fecha o menu após clicar em um link (opcional)
