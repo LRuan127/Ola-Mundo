@@ -272,7 +272,7 @@ footer {
 #destaque,
 #novidades,
 #eventos-do-campus,
-#divulgações {
+#divulgaçao {
   padding: 20px;
   margin-bottom: 30px; /* Adicione margem na parte inferior para separar as seções */
   background-color: #f8f8f8; /* Cor de fundo */
@@ -284,7 +284,7 @@ footer {
 #destaque h2,
 #novidades h2,
 #eventos-do-campus h2,
-#divulgação h2{
+#divulgaçao h2{
   color: #333; /* Cor do texto */
   font-size: 24px; /* Tamanho da fonte */
   margin-bottom: 20px; /* Espaçamento abaixo do título */
