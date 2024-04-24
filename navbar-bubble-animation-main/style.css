@@ -5,30 +5,30 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
+html{
   height: 500vh;
 }
-
-.container {
+.conteiner{
   max-width: 1280px;
   margin: auto;
 }
-
-a {
+a{
   text-decoration: none;
 }
 
 header {
   width: 100%;
-  padding: 0 4%; /* Ajustando o padding */
+  padding: 10px 4%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* Adicionando z-index */
   transition: .5s;
 }
 
-header.rolagem {
+
+
+
+header.rolagem{
   background: rgb(4, 82, 85);
   padding: 20px 4%;
 }
@@ -36,46 +36,47 @@ header.rolagem {
 .logo {
   text-decoration: none;
   font-size: 30px;
+
 }
 
-header ul {
-  list-style-type: none;
+header ul{
+  list-style-type:none;
 }
 
-header ul li {
+header ul li{
   display: inline-block;
   margin: 0 40px;
 }
 
-header ul li a {
+header ul li a{
   color: #fff;
   text-decoration: none;
 }
 
-.banner {
+.banner{
   height: 100vh;
   background-image: url(banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner h1 {
+.banner h1{
   font-size: 4em;
 }
-
-.banner h1 span {
-  color: #81fff9cc;
+.banner h1 span{
+  color:#81fff9cc ;
 }
 
 .nav {
   max-width: 1280px;
-  height: 50px; /* Reduzindo a altura */
+  height: 70px;
   margin-inline: auto;
-  margin-top: 0; /* Removendo a margem superior */
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,17 +127,19 @@ header ul li a {
 
   .nav-list {
     position: fixed;
-    top: 50px; /* Ajustando a distância do topo */
+    top: 0;
     left: 0;
     width: 100vw;
-    height: calc(100vh - 50px); /* Ajustando a altura para cobrir o restante da tela */
+    height: 100vh;
     background: rgb(4, 82, 85);
     clip-path: circle(0px at 90% -15%);
     transition: 1s ease-out;
+
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
+
     pointer-events: none;
   }
 
