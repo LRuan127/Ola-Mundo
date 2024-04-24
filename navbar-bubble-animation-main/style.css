@@ -113,6 +113,30 @@ header ul li a{
   transition: 0.3s;
 }
 
+.nav-list a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  padding-block: 5px;
+}
+
+
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease; 
+}
+
+
+.nav-list a:hover::after {
+  width: 100%; 
+}
+
 @media (max-width: 750px) {
   .hamburger {
     display: block;
@@ -269,7 +293,7 @@ footer {
 }
 
 /* Estilos para as sections de notícias */
-#destaque,
+#destaques,
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
@@ -281,7 +305,7 @@ footer {
 }
 
 /* Estilos para os títulos das seções */
-#destaque h2,
+#destaques h2,
 #novidades h2,
 #eventos-do-campus h2,
 #divulgaçao h2{
