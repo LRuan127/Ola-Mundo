@@ -26,11 +26,8 @@ header{
 }
 
 header.rolagem{
-  background-color: #ffffffa2;
+  background: rgb(4, 82, 85);
   padding: 20px 4%;
-}
-header.rolagem a{
-   color: #FE775A;
 }
 
 .logo {
@@ -82,10 +79,6 @@ header ul li a{
   align-items: center;
 }
 
-
-
-
-
 .nav-list {
   display: flex;
   gap: 32px;
@@ -135,7 +128,7 @@ header ul li a{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(62, 171, 175);
+    background: rgb(4, 82, 85);
     clip-path: circle(0px at 90% -15%);
     transition: 1s ease-out;
 
