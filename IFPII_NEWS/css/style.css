@@ -300,7 +300,39 @@ footer {
   margin-top: 20px;
 }
 
-#destaques,
+#destaques{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.card{
+  width: 200px;
+  height: 400px;
+  background-color: #555;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  padding: 10px;
+}
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
