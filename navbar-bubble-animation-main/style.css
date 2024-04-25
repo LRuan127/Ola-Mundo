@@ -5,11 +5,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.conteiner{
+.container {
   max-width: 1280px;
   margin: auto;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -22,7 +23,7 @@ header {
   transition: .5s;
 }
 
-header.rolagem{
+header.rolagem {
   background: rgb(4, 82, 85);
   padding: 20px 4%;
 }
@@ -30,47 +31,45 @@ header.rolagem{
 .logo {
   text-decoration: none;
   font-size: 30px;
-
 }
 
-header ul{
-  list-style-type:none;
+header ul {
+  list-style-type: none;
 }
 
-header ul li{
+header ul li {
   display: inline-block;
   margin: 0 40px;
 }
 
-header ul li a{
+header ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-.banner{
+.banner {
   height: 100vh;
   background-image: url(banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner h1{
+.banner h1 {
   font-size: 4em;
 }
-.banner h1 span{
-  color:#81fff9cc ;
+
+.banner h1 span {
+  color: #81fff9cc;
 }
 
 .nav {
   max-width: 1280px;
   height: 70px;
   margin-inline: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,7 +119,6 @@ header ul li a{
   padding-block: 5px;
 }
 
-
 .nav-list a::after {
   content: '';
   position: absolute;
@@ -129,15 +127,30 @@ header ul li a{
   width: 0;
   height: 2px;
   background-color: #fff;
-  transition: width 0.3s ease; 
+  transition: width 0.3s ease;
 }
 
-
 .nav-list a:hover::after {
-  width: 100%; 
+  width: 100%;
 }
 
 @media (max-width: 750px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 3em;
+  }
+
+  .banner h1 span {
+    font-size: 1.5em;
+  }
+
   .hamburger {
     display: block;
     z-index: 1;
@@ -152,12 +165,10 @@ header ul li a{
     background: rgb(4, 82, 85);
     clip-path: circle(0px at 90% -15%);
     transition: 1s ease-out;
-
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     gap: 0;
-
     pointer-events: none;
   }
 
@@ -177,8 +188,6 @@ header ul li a{
   .nav-list li:nth-child(3) a {
     transition: 0.5s 0.6s;
   }
-
-  /* Estilos ativos */
 
   .nav.active .nav-list {
     clip-path: circle(1500px at 90% -15%);
@@ -206,7 +215,6 @@ header ul li a{
   }
 }
 
-/* Estilos para o rodapé */
 footer {
   bottom: 0;
   left: 0;
@@ -271,7 +279,6 @@ footer {
   color: #fff;
 }
 
-/* Estilos responsivos para o rodapé */
 @media only screen and (max-width: 768px) {
   footer {
     padding: 20px 0;
@@ -290,45 +297,40 @@ footer {
 
 .main {
   padding: 20px;
-  margin-top: 20px; /* Adicione margem no topo para separar o conteúdo do header */
+  margin-top: 20px;
 }
 
-/* Estilos para as sections de notícias */
 #destaques,
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
   padding: 20px;
-  margin-bottom: 30px; /* Adicione margem na parte inferior para separar as seções */
-  background-color: #f8f8f8; /* Cor de fundo */
-  border-radius: 5px; /* Arredondar as bordas */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos para os títulos das seções */
 #destaques h2,
 #novidades h2,
 #eventos-do-campus h2,
-#divulgaçao h2{
-  color: #333; /* Cor do texto */
-  font-size: 24px; /* Tamanho da fonte */
-  margin-bottom: 20px; /* Espaçamento abaixo do título */
+#divulgaçao h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-/* Estilos para os artigos dentro das seções */
 article {
-  margin-bottom: 20px; /* Espaçamento entre os artigos */
+  margin-bottom: 20px;
 }
 
-/* Estilos para os títulos dos artigos */
 article h3 {
-  color: #555; /* Cor do texto */
-  font-size: 20px; /* Tamanho da fonte */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* Estilos para o texto dos artigos */
 article p {
-  color: #777; /* Cor do texto */
-  font-size: 16px; /* Tamanho da fonte */
+  color: #777;
+  font-size: 16px;
 }
