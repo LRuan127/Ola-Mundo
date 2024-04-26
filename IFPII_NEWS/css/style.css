@@ -5,6 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .container {
   max-width: 1280px;
   margin: auto;
@@ -21,6 +23,7 @@ header {
   top: 0;
   left: 0;
   transition: .5s;
+  z-index: 100;
 }
 
 header.rolagem {
@@ -56,6 +59,7 @@ header ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 }
 
 .banner h1 {
@@ -333,6 +337,7 @@ footer {
 .card-content{
   padding: 10px;
 }
+#galeria,
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
@@ -342,7 +347,7 @@ footer {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
+#galeria h2,
 #destaques h2,
 #novidades h2,
 #eventos-do-campus h2,
@@ -390,4 +395,122 @@ article p {
 
 .contact-list a i {
   margin-right: 10px;
+}
+
+
+
+
+.wg1{
+  grid-column: span 1;
+}
+.wg2{
+  grid-column: span 2;
+}
+.hg1{
+  grid-row: span 1;
+}
+.hg2{
+  grid-row: span 2;
+}
+
+div.galeria{
+  width: 90%;
+  height: 90vh;
+
+  position:relative ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 45vh;
+
+}
+
+div.single-galeria{
+  margin: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+div.imgh{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+div.imgh img{
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+div.overflow{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(transparent, black);
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+div.conteudo{
+  position: absolute;
+  color: white;
+  border-left: 3px solid white;
+  padding: 0 10px;
+  bottom: 10px;
+  left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+div.conteudo h1{
+  font-size: 18px;
+}
+
+div.conteudo p{
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+
+div.single-galeria:hover div.overflow{
+  opacity: 1;
+}
+div.single-galeria:hover div.conteudo{
+  bottom: 20px;
+}
+
+
+@media screen and (max-width: 764px){
+
+  .wg1{
+      grid-column: span 2;
+  }
+  .hg1{
+      grid-row: span 2;
+  }
+  
+  div.galeria{
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: calc(45vh / 2);  
+  }
+
+  div.conteudo h1{
+      font-size: 14px;
+  }
+}
+
+#galeria {
+  margin-top: 450px;
+  position: relative;
+  z-index: 1;
+ 
+}
+
+.galeria{
+display: flex;
 }
