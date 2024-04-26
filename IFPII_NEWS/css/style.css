@@ -5,8 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .container {
   max-width: 1280px;
   margin: auto;
@@ -235,7 +233,6 @@ footer {
   justify-content: space-around;
 }
 
-
 .section {
   flex: 1;
   text-align: left;
@@ -304,21 +301,21 @@ footer {
   margin-top: 20px;
 }
 
-#destaques{
+#destaques {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
   background-color: rgb(255, 255, 255);
-  
 }
-.card-container{
+
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
-.card{
+
+.card {
   width: 200px;
   height: 400px;
   background-color: #555;
@@ -330,14 +327,14 @@ footer {
   margin-top: 10px;
 }
 
-.card img{
+.card img {
   width: 100%;
   height: auto;
 }
-.card-content{
+
+.card-content {
   padding: 10px;
 }
-#galeria,
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
@@ -347,8 +344,8 @@ footer {
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-#galeria h2,
-#destaques h2,
+
+
 #novidades h2,
 #eventos-do-campus h2,
 #divulgaçao h2 {
@@ -397,58 +394,55 @@ article p {
   margin-right: 10px;
 }
 
-
-
-
-.wg1{
+.wg1 {
   grid-column: span 1;
 }
-.wg2{
+
+.wg2 {
   grid-column: span 2;
 }
-.hg1{
+
+.hg1 {
   grid-row: span 1;
 }
-.hg2{
+
+.hg2 {
   grid-row: span 2;
 }
 
-div.galeria{
+div.galeria {
   width: 90%;
   height: 90vh;
-
-  position:relative ;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 45vh;
-
 }
 
-div.single-galeria{
+div.single-galeria {
   margin: 3px;
   position: relative;
   cursor: pointer;
 }
 
-div.imgh{
+div.imgh {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: absolute;
 }
 
-div.imgh img{
+div.imgh img {
   position: relative;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-div.overflow{
+div.overflow {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -457,7 +451,7 @@ div.overflow{
   transition: all 0.5s ease-in-out;
 }
 
-div.conteudo{
+div.conteudo {
   position: absolute;
   color: white;
   border-left: 3px solid white;
@@ -467,50 +461,44 @@ div.conteudo{
   transition: all 0.5s ease-in-out;
 }
 
-div.conteudo h1{
+div.conteudo h1 {
   font-size: 18px;
 }
 
-div.conteudo p{
+div.conteudo p {
   font-size: 10px;
   text-transform: uppercase;
 }
 
-
-div.single-galeria:hover div.overflow{
+div.single-galeria:hover div.overflow {
   opacity: 1;
 }
-div.single-galeria:hover div.conteudo{
+
+div.single-galeria:hover div.conteudo {
   bottom: 20px;
 }
 
-
-@media screen and (max-width: 764px){
-
-  .wg1{
-      grid-column: span 2;
+@media screen and (max-width: 764px) {
+  .wg1 {
+    grid-column: span 2;
   }
-  .hg1{
-      grid-row: span 2;
+  .hg1 {
+    grid-row: span 2;
   }
   
-  div.galeria{
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: calc(45vh / 2);  
+  div.galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: calc(45vh / 2);  
   }
 
-  div.conteudo h1{
-      font-size: 14px;
+  div.conteudo h1 {
+    font-size: 14px;
   }
 }
 
 #galeria {
-  margin-top: 450px;
+  margin-top: 20%;
+  margin-bottom: -15%;
   position: relative;
   z-index: 1;
- 
-}
-
-.galeria{
-display: flex;
 }
