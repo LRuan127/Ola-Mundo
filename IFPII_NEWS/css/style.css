@@ -507,7 +507,9 @@ div.single-galeria:hover div.conteudo {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: calc(45vh / 2);  
     margin-top: 300px;
+    text-align: center;
   }
+
 
   div.conteudo h1 {
     font-size: 14px;
