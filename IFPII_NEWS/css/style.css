@@ -74,10 +74,12 @@ header ul li a {
 
 .banner h1 {
   font-size: 4em;
+  color: black;
+  
 }
 
 .banner h1 span {
-  color: white;
+  color: black;
 }
 
 .nav {
