@@ -489,6 +489,7 @@ div.single-galeria:hover div.conteudo {
   div.galeria {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: calc(45vh / 2);  
+    margin-top: 300px;
   }
 
   div.conteudo h1 {
