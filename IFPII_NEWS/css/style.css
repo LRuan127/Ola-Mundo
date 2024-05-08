@@ -323,35 +323,6 @@ footer {
   background-color: rgb(255, 255, 255);
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 200px;
-  height: 400px;
-  background-color: #555;
-  border-radius: 9px;
-  overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.05);
-}
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-content {
-  padding: 10px;
-}
 #novidades,
 #eventos-do-campus,
 #divulgaçao {
@@ -427,98 +398,62 @@ article p {
   grid-row: span 2;
 }
 
-div.galeria {
-  width: 90%;
-  height: 90vh;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 45vh;
-}
-
-div.single-galeria {
-  margin: 3px;
-  position: relative;
-  cursor: pointer;
-}
-
-div.imgh {
+.card {
   width: 100%;
-  height: 100%;
+  max-width: 250px; /* Ajuste o tamanho conforme necessário */
+  margin-bottom: 20px;
   overflow: hidden;
-  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-div.imgh img {
-  position: relative;
-  object-fit: cover;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
 }
 
-div.overflow {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(transparent, black);
-  opacity: 0.8;
-  transition: all 0.5s ease-in-out;
+.description {
+  padding: 15px;
+  background-color: #fff;
 }
 
-div.conteudo {
-  position: absolute;
-  color: white;
-  border-left: 3px solid white;
-  padding: 0 10px;
-  bottom: 10px;
-  left: 10px;
-  transition: all 0.5s ease-in-out;
+.description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-div.conteudo h1 {
-  font-size: 18px;
+.description p {
+  font-size: 16px;
+  color: #666;
 }
 
-div.conteudo p {
-  font-size: 10px;
-  text-transform: uppercase;
-}
+/* CSS existente */
 
-div.single-galeria:hover div.overflow {
-  opacity: 1;
-}
-
-div.single-galeria:hover div.conteudo {
-  bottom: 20px;
-}
-
-@media screen and (max-width: 764px) {
-  .wg1 {
-    grid-column: span 2;
-  }
-  .hg1 {
-    grid-row: span 2;
-  }
-  
-  div.galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: calc(45vh / 2);  
-    margin-top: 300px;
-    text-align: center;
+@media (max-width: 768px) {
+  #novidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralizar os itens na horizontal */
   }
 
-
-  div.conteudo h1 {
-    font-size: 14px;
+  .card {
+    width: calc(100% - 40px); /* 40px de margem total (20px em cada lado) */
   }
 }
 
-#galeria {
-  margin-top: 35%;
-  margin-bottom: -15%;
-  position: relative;
-  z-index: 1;
+@media (min-width: 769px) {
+  #novidades {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: calc(33.33% - 40px); /* 40px de margem total (20px em cada lado) */
+  }
 }
